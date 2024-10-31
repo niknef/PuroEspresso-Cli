@@ -1,3 +1,20 @@
+<script>
+  export default {
+    name: 'ProductCard',
+    props: {
+      product: {
+        type: Object,
+        required: true,
+      },
+    },
+    computed: {
+      imageSrc() {
+        return `/src/assets/img/${this.product.imageUrl}`;
+      },
+    },
+  };
+</script>
+
 <template>
     <div class="col">
       <div class="card shadow-sm">
@@ -9,22 +26,7 @@
         </div>
       </div>
     </div>
-    
-  </template>
+</template>
   
-  <script>
-  export default {
-    name: 'ProductCard',
-    props: {
-      product: {
-        type: Object,
-        required: true,
-      },
-    },
-    computed: {
-      imageSrc() {
-        return `/src/assets/img/${this.product.imageName}`;
-      },
-    },
-  };
-  </script>
+  
+ 
