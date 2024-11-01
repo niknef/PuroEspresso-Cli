@@ -41,7 +41,7 @@
 }
 
 .bienvenido {
-    background-image: url(./logos/bienvenido.png);
+    background-image: url("./logos/bienvenido.png");
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
